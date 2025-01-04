@@ -1,0 +1,28 @@
+<mvc:View controllerName="at.clouddna.fullscreennav.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:f="sap.ui.layout.form"
+    xmlns="sap.m">
+    <Page id="pageDetail" title="Details">
+        <headerContent>
+            <OverflowToolbar>
+            <ToolbarSpacer/>
+            <Button type="Transparent" text="Carrier Flights" press="onNavToCarrierFlights" icon="sap-icon://forward"/>
+            </OverflowToolbar>
+        </headerContent>
+        <content>
+            <f:SimpleForm id="detail_simpleform" editable="true" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1">
+                <f:content>
+                    <Label id="labelLogo" labelFor="avatarLogo" text="Logo"/>
+                    <Avatar id="avatarLogo" src="/img/{carrid}.png" displaySize="S" displayShape="Square" showBorder="true"/>
+                    <Label id="labelCarrid" labelFor="textCarrid" text="ID"/>
+                    <Text id="textCarrid" text="{carrid}"/>
+                    <Label id="labelCarrname" labelFor="textCarrname" text="Name"/>
+                    <Text id="textCarrname" text="{CARRNAME}"/>
+                    <Label id="labelWebsite" labelFor="linkWebsite" text="Website"/>
+                    <Link id="linkWebsite" text="{URL}"/>
+                    <Label id="labelCurr" labelFor="textCurr" text="Currency"/>
+                    <Text id="textCurr" text="{CURRCODE}"/>
+                </f:content>
+            </f:SimpleForm>
+        </content>
+    </Page>
+</mvc:View>

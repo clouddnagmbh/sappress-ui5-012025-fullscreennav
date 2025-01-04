@@ -1,0 +1,9 @@
+{
+  "applications": {
+    "CarrierFlights-display": {
+      "additionalInformation": "SAPUI5.Component=at.clouddna.sappress.carrierflights",
+      "applicationType": "URL",
+      "url": "../resources/at.clouddna.sappress.carrierflights"
+    }
+  }
+}

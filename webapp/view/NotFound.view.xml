@@ -1,0 +1,9 @@
+<mvc:View controllerName="at.clouddna.fullscreennav.controller.NotFound"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:f="sap.ui.layout.form"
+    xmlns="sap.m">
+    <IllustratedMessage id="illustratedMessageNotFound" illustrationType="sapIllus-PageNotFound">
+        <additionalContent>
+		    <Button text="Take me back to the list" press="onNavToMain"/>
+		</additionalContent>
+    </IllustratedMessage>
+</mvc:View>
